@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Halaman Pengguna</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+</head>
+
+<body id="grad">
+    <div class="container_signup">
+        <h1 style="text-align: center;">Sign Up</h1>
+        <form action="Pengguna.php" method="POST">
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td><input class="input_2" type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td><input class="input_2" type="text" name="nama"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input class="input_2" type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password</td>
+                    <td><input class="input_2" type="password" name="cfpassword"></td>
+                </tr>
+                <tr>
+                    <td>Level</td>
+                    <td><select class="input_2" name="level">
+                            <option value="Pilih">Pilih</option>
+                            <option value="Pengguna">Pengguna</option>
+                            <option value="Kontributor">Kontributor</option>
+                            <option value="Pemilik">Pemilik</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="button button_login" type="submit" value="Daftar">
+                    </td>
+                    <td>
+                        <input class="button button_signup" type="reset" name="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+</body>
+
+</html>

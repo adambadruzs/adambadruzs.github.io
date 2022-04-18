@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        p{
+            color: rgb(255, 255, 255);
+            font-size: 19px;
+        }
+        
+        h2 {
+          text-align: center;
+          color: rgb(255, 255, 255);
+        }
+        
+        .active {
+          background-color: #3d3d3d;
+        }
+        
+        body {
+          font-family: Arial;
+          padding: 5px;
+          background: #141414;
+          
+        }
+        
+        /* Header/Blog Title */
+        .header {
+          padding: 30px;
+          text-align: center;
+          background: rgb(255, 255, 255);
+        }
+
+        .header h1 {
+        color: #000000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        } 
+        
+        /* Style the top navigation bar */
+        .topnav {
+          overflow: hidden;
+          background-color: rgb(0, 0, 0);
+         
+        }
+        
+        /* Style the topnav links */
+        .topnav a {
+          float: left;
+          display: block;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        /* Change color on hover */
+        .topnav a:hover {
+          background-color: rgb(36, 36, 36);
+          color: rgb(255, 255, 255);
+        }
+
+        .container::after{
+            padding: 10px;
+            content: "";
+            clear: both;
+            display: table;
+            }
+        
+        .leftcolumn {   
+        float: left;
+        width: 75%;
+        background-color: #ffffff;
+        padding: 10px;
+        }
+
+        /* Right column */
+        .rightcolumn {
+        float: right;
+        width: 25%;
+        background-color: #ffffff;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+        }
+
+        .cardleft {
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        margin-bottom: 20px;
+        }
+
+        .cardright {
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .footer {
+          padding: 20px;
+          text-align: center;
+          background: rgb(0, 0, 0);
+        }
+
+        .footer h2 {
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        } 
+
+      a:visited {
+        color: rgb(250, 250, 250);
+        background-color: transparent;
+      }
+
+      a:hover {
+        color: rgb(95, 90, 82);
+        background-color: transparent;
+      }
+
+      a{
+        color: #ffffff;
+      }
+
+      ul{
+        color: #ffffff;
+      }
+
+        </style>
+
+        <title>
+          Minecraft Java Edition 1.18.2
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Minecrafter</h1>
+          </div>
+          
+          <div class="topnav">
+            <a class="active" href="#home" style="color:rgb(255, 255, 255);">Home</a>
+            <a href="#games">Games</a>
+            <a href="#community">Community</a>
+            <a href="#merch">Merch</a>
+            <a href="#support">Support</a>
+          </div>
+
+          <div class="container">
+            <div class="leftcolumn">
+          <div class="cardleft">
+                      <p style="font-family:'Times New Roman', Times, serif; font-size: 30px; text-align:center">MINECRAFT JAVA EDITION 1.18.2</p>
+                  <p style="font-family:'Times New Roman', Times, serif">Selasa, 22 Februari 2022</p>
+                  <img src="cover2.jpg" style="margin-left: 3.2cm;width:800px;">
+                  <br>
+                  <p style="font-family:'Times New Roman', Times, serif;"
+                  ><strong>Update Minecraft Java Edition Versi 1.18.2</strong> telah dikonfirmasi,
+                  Kami sekarang merilis 1.18.2 untuk Minecraft: Java Edition. Rilis ini menambahkan tag universal dan perintah placefeature.
+                  Ini juga memperkenalkan kemungkinan paket data eksperimental untuk menyesuaikan pembuatan gua dan menambahkan struktur khusus baru ke dunia.
+                  </p>
+                  <p>
+                    Selain itu, versi ini berisi pembaruan kepatuhan untuk pemain Korea Selatan.
+                  <p><strong>Perubahan di 1.18.2</strong></p>
+                  <ul>
+                    <li>Pengguna yang menjalankan Minecraft di lingkungan 32-bit 
+                      akan menerima peringatan di menu utama tentang akhir yang akan datang dari dukungan lingkungan 32-bit</li>
+                    <li>Jika Anda bermain di Korea Selatan, kami menambahkan timer dan pemberitahuan gameplay sesuai dengan 
+                      peraturan game untuk membantu mengingatkan pemain agar sesekali beristirahat dari gameplay</li>
+                    <li>Sebuah seed dari angka nol tidak lagi ditangani sebagai kasus khusus</li>
+                  </ul> 
+                    
+                    <p><strong>Perubahan Teknis di 1.18.2</strong></p>
+                    <ul>
+                      <li>Perintah tambahan: placefeature</li>
+                    <li>Perintah locate sekarang menggunakan parameter id namespaced</li>
+                    <li>Parameter perintah locate sekarang menjadi struktur yang 
+                      dikonfigurasi daripada tipe struktur. Misalnya, sekarang Anda dapat menggunakan /locate village_desert atau /locate shipwreck_beached</li>
+                    </ul>
+                    
+                    <p><strong>PLACEFEATURE Command</strong></p>
+                    <p>
+                      Perintah baru yang menempatkan fitur yang dikonfigurasi di lokasi tertentu. Sintaks: fitur tempat <id> [pos]
+                      Parameter:
+                    </p>
+                    <ul>
+                      <li>id: ID dengan spasi nama dari fitur yang dikonfigurasi untuk ditempatkan</li>
+                      <li>pos: Posisi yang akan digunakan sebagai asal penempatan fitur (jika dihilangkan, ~ ~ ~ digunakan)</li>
+                    </ul>
+
+                    <p><strong>CONFIGURABLE CAVES</strong></p>
+                    <ul>
+                      <li>Registri baru telah ditambahkan untuk fungsi Density (gua dibuat dengan menggabungkannya bersama-sama)</li>
+                      <li>Pengaturan kebisingan mendapat bidang baru noise_router (dan kehilangan beberapa bendera), 
+                        lihat folder worldgen/noise_settings di laporan worldgen</li>
+                      <li>Pengaturan kebisingan menghubungkan bagian-bagian yang digerakkan oleh data dari generasi gua dengan sisa kode</li>
+                    </ul>
+
+                    <p><strong>CONFIGURED STRUCTURES AND STRUCTURE SETS</strong></p>
+                    <ul>
+                      <li>Paket data eksperimental dapat menambahkan kumpulan struktur baru</li>
+                      <li>Bidang fitur di predikat lokasi sekarang merujuk pada fitur yang dikonfigurasi</li>
+                      <li>Bidang tujuan fungsi tabel jarahan explore_map sekarang menjadi id tag fitur yang dikonfigurasi</li>
+                      <li>Fungsi tabel jarahan explore_map tidak lagi secara otomatis menetapkan nama tampilan peta</li>
+                    </ul>
+                    </div>
+          </div>
+          
+
+          <div class="rightcolumn">
+            <div class="cardright">
+                <h2>About Me</h2>
+                <img src="adam.png" style="height:200px; width: 200px; margin-left: 1.7cm;">
+                <p>Halo Semua, Perkenalkan nama saya Adam Badruzzaman, seorang Mahasiswa dari Universitas Maulana Malik Ibrahim Malang di jurusan
+                  Teknik Informatika.
+                </p>
+              </div>
+
+              <div class="cardright">
+                <h2>Popular Post</h2>
+                <ul>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                </ul>  
+              </div>
+
+              <div class="cardright">
+                <h2>Facebook Page</h2>
+                <ul>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                </ul>  
+              </div>
+
+              <div class="cardright">
+                <h2>Archive</h2>
+                <ul>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                  <li>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et</li>
+                </ul>  
+              </div>
+        </div>
+          </div>
+          
+
+        <div class="footer">
+          <h2>Footer</h2>
+        </div>
+      
+    </body>
+</html>
